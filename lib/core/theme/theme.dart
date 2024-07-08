@@ -20,5 +20,10 @@ class AppTheme {
   );
   static final lightThemeMode = ThemeData.light().copyWith(
     scaffoldBackgroundColor: Pallete.whiteColor,
+    inputDecorationTheme: InputDecorationTheme(
+      contentPadding: const EdgeInsets.all(27),
+      enabledBorder: _boarder(Pallete.gradient1),
+      focusedBorder: _boarder(Pallete.gradient3),
+    ),
   );
 }
